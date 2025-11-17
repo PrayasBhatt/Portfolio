@@ -274,9 +274,6 @@ const App = () => {
           <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500 mb-2">
             Portfolio Showcase
           </h1>
-          <p className="text-gray-400 max-w-2xl mx-auto">
-            Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.
-          </p>
         </header>
 
         <div className="flex justify-between p-2 rounded-3xl max-w-5xl mx-auto shadow-2xl bg-gray-900/60 border border-white/10 mb-12 h-32">

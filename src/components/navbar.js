@@ -60,8 +60,19 @@ const Navbar = () => {
         };
     }, []); 
 
+    // **MODIFICATION HERE**
+    // 1. We create a dynamic class for the navbar background.
+    // 2. We use 'bg-gray-950' (or any dark color) when isMenuOpen is true.
+    const navbarClasses = `fixed top-0 inset-x-0 z-50 p-4 md:p-6 transition-colors border-b border-white/10 ${
+        isMenuOpen 
+            ? 'bg-gray-950' // Solid color when menu is open
+            : 'bg-transparent backdrop-blur-sm' // Transparent/Blurry when menu is closed
+    }`;
+    // **END MODIFICATION**
+
     return (
-        <nav className="fixed top-0 inset-x-0 z-50 p-4 md:p-6 bg-transparent backdrop-blur-sm border-b border-white/10 transition-colors">
+        // Apply the dynamic class
+        <nav className={navbarClasses}> 
             <div className="flex justify-between items-center max-w-7xl mx-auto">
                 <Link 
                     href="#home" 

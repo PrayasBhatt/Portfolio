@@ -73,7 +73,6 @@ const Hero = () => {
             className="max-w-xl text-lg text-gray-400 mb-10 mx-auto md:mx-0"
             variants={itemVariants}
           >
-            Building responsive, performant, and delightful web applications from idea to deployment.
           </motion.p>
 
           <motion.div
