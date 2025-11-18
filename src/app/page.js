@@ -1,20 +1,19 @@
-import Navbar from "@/components/navbar";
-import Hero from '@/components/hero';
-import About from '@/components/about';
-import Portfolio from '@/components/portfolio';
-import Contact from '@/components/contact';
-import Footer from "@/components/footer";
-const Home = () => {
-    return (
-        <>
-            <Navbar />
-            <Hero />
-            <About />
-            <Portfolio />
-            <Contact />
-            <Footer />
-        </>
-    );
-};
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Portfolio from "@/components/Portfolio";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
-export default Home;
+export default function Home() {
+  return (
+    <>
+      <Navbar /> 
+      <Hero />
+      <About />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </>
+  );
+}
